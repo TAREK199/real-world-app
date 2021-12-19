@@ -13,7 +13,7 @@
 import EventCard from "@/components/EventCard.vue";
 
 export default {
-  name: "Home",
+  name: "EventList",
   components: {
     EventCard
   },
