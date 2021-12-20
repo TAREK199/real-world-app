@@ -22,14 +22,13 @@ export default {
   data(){
 
     return {
-
       events : null
     }
   },
   created(){
      EventService.getEvents()
-    .then( Response =>{
-      this.events = Response.data
+    .then( response =>{
+      this.events = response.data
     })
     .catch( error =>{
       console.log(error)
